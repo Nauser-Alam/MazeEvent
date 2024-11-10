@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Path Enigma - Robotics Maze-Solving Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-content">
+      <img src="./public/logo.png" alt="Robotics NIT Patna Logo" class="logo">
+      <div class="header-text">
+        <h1>Path Enigma</h1>
+        <p>Robotics NIT Patna</p>
+      </div>
+    </div>
+    <p class="sub-heading">The Robotics Maze-Solving Challenge</p>
+  </header>
+
+<!-- Event Details Section -->
+<section id="event-details" class="event-details">
+  <h2>Event Details</h2>
+
+  <!-- Introduction about the maze-solving challenge -->
+  <div class="intro">
+    <h3>About the Path Enigma Challenge</h3>
+    <p>
+      Path Enigma is a thrilling robotics maze-solving competition where participants
+      design autonomous robots to navigate through a complex maze. The challenge tests
+      your problem-solving skills, creativity, and the efficiency of your robot’s design.
+      Get ready to unleash your robotics skills and solve the Path Enigma in the most
+      innovative way possible!
+    </p>
+  </div>
+
+  <!-- Event details -->
+  <div class="event-info">
+    <div class="event-detail">
+      <strong>Date:</strong>
+      <span>October 16th and 17th</span>
+    </div>
+    <div class="event-detail">
+      <strong>Venue:</strong>
+      <span>NIT Patna, Old Campus</span>
+    </div>
+    <div class="event-detail">
+      <strong>Contact:</strong>
+      <span>Nauser: 8603410057, Devraj: 8210129260, Satyam: 8824731062</span>
+    </div>
+  </div>
+
+  <!-- Watch Trailer Button -->
+  <button onclick="showTrailer()" class="trailer-button">Watch Trailer</button>
+</section>
+
+
+  <!-- Modal Popup for Trailer -->
+  <div id="trailer-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeTrailer()">&times;</span>
+      <h2>Event Trailer</h2>
+      <div class="video-container">
+        <iframe width="100%" height="100%" 
+                src="https://www.youtube.com/embed/DLrXXBDyDX8?si=rWDiebyJm99Uwgz0&amp;clip=UgkxQ3yXO3Cugzjovg7z8YKom5jrqEPeonVo&amp;clipt=ELqGBxia2wo" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rules Section -->
+  <section id="rules">
+    <h2>Rules & Scoring</h2>
+    <div class="rules-container">
+      <div class="rule-item">
+        <span class="icon">&#128295;</span>
+        <p>Each robot must be autonomous, with a maximum size of 15x15 cm.</p>
+      </div>
+      <div class="rule-item">
+        <span class="icon">&#127968;</span>
+        <p>The maze has a 10x10 sq. feet area with checkpoints and dead-ends.</p>
+      </div>
+      <div class="rule-item">
+        <span class="icon">&#128308;</span>
+        <p><strong>Scoring Criteria:</strong></p>
+        <ul class="scoring-criteria">
+          <li>Fastest time with fewest penalties wins.</li>
+          <li>Penalties for wall collisions, resets, boundary exits, and missed checkpoints.</li>
+        </ul>
+      </div>
+    </div>
+    <a href="rulebook.pdf" class="download-link" download>Download Rulebook</a>
+  </section>
+
+  <!-- Registration Button Section -->
+  <section id="registration">
+    <h2>Register Now</h2>
+    <button onclick="openRegistrationForm()">Register for Path Enigma</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Path Enigma Event. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
